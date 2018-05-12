@@ -1,6 +1,7 @@
 from __future__ import print_function
 from time import sleep
 import argparse
+import sys
 
 def sentient_type(text, delay=0.07, end="\n"):
 	"""The function used to type.
@@ -15,7 +16,8 @@ def sentient_type(text, delay=0.07, end="\n"):
 		if len(c)!=1:
 			sentient_type(c, delay=delay, end="")
 			continue
-		print(c, sep="", end="", flush=True)
+		print(c, sep="", end="")
+		sys.stdout.flush()
 		sleep(delay)
 	print(end=end)
 

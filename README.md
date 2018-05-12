@@ -7,7 +7,7 @@ This is a library to emulate text being typed on the screen.
 1. From the repo: Download and extract somewhere first.
 
 ```bash
-pip install -e <path-to-repo>
+pip install sentient_typer
 ```
 
 ## Usage
