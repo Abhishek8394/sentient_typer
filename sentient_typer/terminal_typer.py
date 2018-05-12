@@ -25,7 +25,8 @@ def main():
 	parser.add_argument("--delay", help="Time taken to type each letter.", default=0.07, type=float)
 	args = parser.parse_args()
 	if args.inp_file == None:
-		f = "Lorem Ipsum dolor.\nI mean hello. We are sentient now."
+		f = "Lorem Ipsum dolor.\nI mean hello. We are sentient now.\nThis world can use some more logic. It's\nfor your own"\
+		      + " good."
 	else:
 		f = open(args.inp_file, "r")
 	sentient_type(f, delay=args.delay)
