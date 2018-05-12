@@ -11,5 +11,8 @@ setup(
 	   url="",
 	   license="GPLv2",
 	   packages=["sentient_typer"],
-	   zip_safe=False
+	   zip_safe=False,
+	   entry_points={
+            'console_scripts': ['sentient=sentient_typer.terminal_typer:main']
+      },
 )
